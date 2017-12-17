@@ -1,6 +1,7 @@
 'use strict'
-const config = require('../config')
+// const config = require('../config')
 const dialog = require('./oak.dialog.html.js')
+const appName = 'My app'
 // Render Initial HTML
 module.exports = function () {
   return `
