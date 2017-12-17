@@ -84,3 +84,5 @@ Vue.component('oak-button', {
     this.DOMy = ref.getBoundingClientRect().top
   }
 })
+
+console.log('test');
