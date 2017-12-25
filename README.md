@@ -1,28 +1,27 @@
-Welcome to Oak-Material!
-===================
+# oak-mat
 
+> A Vue.js project
 
-This is an extension of the **[Cryptominion][5]** repository.  This was used by the developers to separate the homepage UI elements in order to build out their features separate from the Cryptominion app. This repository can also be used as a resource by other developers to see some simples use cases for Vue-Material elements.  
+## Build Setup
 
-----------
+``` bash
+# install dependencies
+npm install
 
+# serve with hot reload at localhost:8080
+npm run dev
 
-To Install
--------------
-<i class="icon-cog"></i>
+# build for production with minification
+npm run build
 
->git clone https://github.com/thegreatsantini/oak-material
+# build for production and view the bundle analyzer report
+npm run build --report
 
-Install dependencies
+# run unit tests
+npm run unit
 
-> npm install
+# run all tests
+npm test
+```
 
-*Be sure that you are in the **oak-material-master** directory  
-
-
-
-
-
-  
- 
-  [5]: https://github.com/holyoak/cryptominion
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

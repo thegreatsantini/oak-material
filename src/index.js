@@ -1,12 +1,9 @@
-// register global gui components
+import Vue from 'vue'
+import index from 'src/index.vue'
 
-require('./Button')
-require('./Checkbox')
-require('./Input')
-const Dialog = require('./Dialog')
+import 'scss/style.scss'
 
-// document.body.addElement(dialog.html.js)
-
-module.exports = {
-  dialog: Dialog.show
+export default (targetElement) => {
+  const Component = Vue.extend(index)
+  return new Component().$mount(targetElement)
 }
