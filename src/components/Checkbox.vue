@@ -1,7 +1,9 @@
 <template>
   <div>
    Checkbox Component
-   <oak-checkbox/>
+   <oak-checkbox
+     @click="toggleCheck"
+     :checked="checked"/>
   </div>
 </template>
 
@@ -9,7 +11,15 @@
 
 export default {
   data () {
-    return {}
+    return {
+      checked: true
+    }
+  },
+
+  methods: {
+    toggleCheck () {
+      this.checked = !this.checked
+    }
   }
 }
 </script>
