@@ -5,15 +5,23 @@
     </div>
     <div class="app-row">
       <div>
-        <div class="button">Button</div>
+        <div class="button">
+          <router-link to="Button">Button</router-link>
+        </div>
         <div class="button">
           <router-link to="Checkbox">Checkbox</router-link>
         </div>
-        <div class="button">Dialog</div>
+        <div class="button">
+          <router-link to="Dialog">Dialog</router-link>
+          
+        </div>
         <div class="button">
           <router-link to="Input">Input</router-link>
         </div>
-        <div class="button">Radio</div>
+        <div class="button">
+          <router-link to="Radio">Radio</router-link>
+          
+        </div>
       </div>
     </div>
     <router-view/>
