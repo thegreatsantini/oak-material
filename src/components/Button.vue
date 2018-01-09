@@ -1,9 +1,7 @@
 <template>
   <div>
    Button Component
-   <oak-checkbox
-     @click="toggleCheck"
-     :checked="checked"/>
+   <button>This is not the button</button>
   </div>
 </template>
 
