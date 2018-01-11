@@ -8,6 +8,9 @@ import Input from '@/components/Input'
 import Dialog from '@/components/Dialog'
 import Radio from '@/components/Radio'
 import Button from '@/components/Button'
+import Tooltip from '@/components/Tooltip'
+import Accordion from '@/components/Accordion'
+
  
 
 Vue.use(Router)
@@ -38,6 +41,14 @@ export default new Router({
       path: '/Button',
       name: 'Button',
       component: Button
+    },  {
+      path: '/Tooltip',
+      name: 'Tooltip',
+      component: Tooltip
+    },  {
+      path: '/Accordion',
+      name: 'Accordion',
+      component: Accordion
     }
   ]
 })
