@@ -27,7 +27,7 @@
 export default {
   data () {
     return {
-      options: ['One', 'Two', 'Three', 'Four']
+      options: ['One', 'Two', 'Three', 'Four', 'Aardvark']
     }
   },
 

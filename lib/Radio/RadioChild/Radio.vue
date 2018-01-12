@@ -4,11 +4,9 @@
 
 <script>
 export default {
-  props: ['option'],
+  props: ['active', 'index', 'option'],
   data () {
-    return {
-      option: ''
-    }
+    return {}
   }
 }
 </script>
