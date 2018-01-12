@@ -1,6 +1,9 @@
 <template>
   <div>
     Radio Component
+    <oak-radio 
+      @output = 'setRadio'
+      :options= 'options'/>
 <label class="container">One
   <input type="radio" checked="checked" name="radio">
   <span class="checkmark"></span>
@@ -23,9 +26,13 @@
 <script>
 export default {
   data () {
-    return {}
+    return {
+      options: ['One', 'Two', 'Three', 'Four']
+    }
   },
 
-  methods: {}
+  methods: {
+    setRadio () { console.log('set Radio') }
+  }
 }
 </script>
