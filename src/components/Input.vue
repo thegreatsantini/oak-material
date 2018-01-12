@@ -1,10 +1,27 @@
 <template>
   <div>
-    Input Component
-    <oak-input-number label="Amount: " placeholder="Enter an Amount"
+    <div>
+    Basic Input Component
+    <oak-input
+     @output="setBasic"
+     :value="basic.value"
+    />
+    <div>{{basic.value}}</div>
+    </div>
+    Basic Input with Theming
+    <div><small>Linked data goes here</small></div>
+    <div>
+    Basic Input with Width
+    <div><small>Linked data goes here</small></div>
+    </div>
+    <div>
+    Number Input Component
+    <oak-input-number label="Amount: " placeholder="Enter an amount"
       @output="setAmount"
       :theme="numberTheme"
       :value="amount"/>
+    <div><small>Linked data goes here</small></div>
+    </div>
   </div>
 </template>
 
@@ -13,6 +30,9 @@
 export default {
   data () {
     return {
+      basic: {
+        value: 'Your text'
+      },
       amount: 5,
       theme: {
         accent: '#A1A1A1',
@@ -41,6 +61,9 @@ export default {
   methods: {
     setAmount (x) {
       this.amount = Number(x)
+    },
+    setBasic (x) {
+      this.basic.value = x
     }
   }
 }
