@@ -2,8 +2,8 @@
   <div>
     Radio Component
     <oak-radio 
-      @output = 'setRadio'
-      :options= 'options'/>
+      @output="setRadio"
+      :options="options"/>
 <label class="container">One
   <input type="radio" checked="checked" name="radio">
   <span class="checkmark"></span>
