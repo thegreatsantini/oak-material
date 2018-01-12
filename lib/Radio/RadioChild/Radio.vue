@@ -1,11 +1,15 @@
 <template>
-<div class="oak-radio">
-  radio
-</div>
+    <div>{{ option }}</div>
 </template>
 
 <script>
+export default {
+  props: ['option'],
   data () {
-    return {}
+    return {
+      option: ''
+    }
   }
-<script/>
+}
+</script>
+
